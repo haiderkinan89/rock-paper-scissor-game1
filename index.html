@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>  <!-- Fixed title -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper"> 
-    <h1>Rock Paper Scissors Game</h1>
-    <div class="choices">
-    <div class="choice" id="Rock">
-        <img src="./images/Rock.PNG" alt="">
-    </div>
-<div class="choice" id="Papper">
-    <img src="./images/Paper.PNG" alt="">
-</div>
-<div class="choice" id="Scissor">
-    <img src="./images/Scissor.PNG" alt="">
-</div>
-</div>
-<div class="scoreboard">
-    <div class="score">
-        <p id="user-score">0</p>
-        <p>You</p>
-
-    </div>
-    <div class="score">
-        <p id="comp-score"> 0</p>
-        <p>Comp</p>
+        <h1>Rock Paper Scissors Game</h1>
         
+        <div class="choices">
+            <!-- FIXED: Changed IDs to lowercase (better practice) -->
+            <!-- FIXED: Corrected image filename (Rock.png → rock.png) -->
+            <div class="choice" id="rock">
+                <img src="images/rock.png" alt="Rock">
+            </div>
+            
+            <!-- FIXED: Changed ID from "Papper" to "paper" (correct spelling) -->
+            <!-- FIXED: Corrected image filename (Paper.png → paper.png) -->
+            <div class="choice" id="paper">
+                <img src="images/paper.png" alt="Paper">
+            </div>
+            
+            <!-- FIXED: Changed ID from "Scissor" to "scissors" (correct spelling) -->
+            <!-- FIXED: Corrected image filename (Scissor.png → scissor.png) -->
+            <div class="choice" id="scissors">
+                <img src="images/scissor.png" alt="Scissors">
+            </div>
+        </div>
+        
+        <div class="scoreboard">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+            <div class="score">
+                <p id="comp-score">0</p>
+                <p>Comp</p>
+            </div>
+        </div>
+        
+        <!-- FIXED: Changed id to match JavaScript -->
+        <div class="msg-container" id="msg">  
+            Play your move
+        </div>
+        
+        <button id="reset">Reset</button>
     </div>
-</div>
-<div class="msg-container">
-    <p id="msg">Play your move</p>
-</div>
-<button id="reset">Reset</button>
-
-</div>
 
     <script src="./script.js"></script>
-
 </body>
 </html>
